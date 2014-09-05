@@ -1,0 +1,260 @@
+{
+  "aggregate": {
+    "sloc": {
+      "logical": 26,
+      "physical": 71
+    },
+    "cyclomatic": 2,
+    "halstead": {
+      "operators": {
+        "distinct": 9,
+        "total": 62,
+        "identifiers": [
+          "var",
+          "=",
+          ".",
+          "()",
+          "function",
+          "+",
+          "+=",
+          "if",
+          "throw"
+        ]
+      },
+      "operands": {
+        "distinct": 44,
+        "total": 86,
+        "identifiers": [
+          "\"use strict\"",
+          "exec",
+          "\"child_process\"",
+          "require",
+          "path",
+          "\"path\"",
+          "config",
+          null,
+          "docsSetup",
+          "gulp",
+          "conf",
+          "\"docs\"",
+          0,
+          "docsTask",
+          "task",
+          "packageJson",
+          "root",
+          "\"package.json\"",
+          "resolve",
+          "appName",
+          "name",
+          "templatePath",
+          "__dirname",
+          "\"../templates/docs.jade\"",
+          "docPath",
+          "libPath",
+          "\"lib\"",
+          "cmdPath",
+          "\"../node_modules/.bin\"",
+          "cmd",
+          "\"/doxx\"",
+          "\" -t \"",
+          "\" -T \"",
+          "\" --template \"",
+          "\" -s \"",
+          "execCallback",
+          "err",
+          "stdout",
+          "stderr",
+          "console",
+          "log",
+          "error",
+          "module",
+          "exports"
+        ]
+      },
+      "length": 148,
+      "vocabulary": 53,
+      "difficulty": 8.795454545454545,
+      "volume": 847.7322272753536,
+      "effort": 7456.190271717314,
+      "bugs": 0.2825774090917845,
+      "time": 414.2327928731841
+    },
+    "params": 5,
+    "line": 1,
+    "cyclomaticDensity": 7.6923076923076925
+  },
+  "functions": [
+    {
+      "name": "docsSetup",
+      "sloc": {
+        "logical": 2,
+        "physical": 7
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 3,
+          "total": 3,
+          "identifiers": [
+            "=",
+            "()",
+            "."
+          ]
+        },
+        "operands": {
+          "distinct": 7,
+          "total": 9,
+          "identifiers": [
+            "gulp",
+            "conf",
+            "config",
+            "\"docs\"",
+            0,
+            "docsTask",
+            "task"
+          ]
+        },
+        "length": 12,
+        "vocabulary": 10,
+        "difficulty": 1.9285714285714288,
+        "volume": 39.863137138648355,
+        "effort": 76.87890733882183,
+        "bugs": 0.013287712379549451,
+        "time": 4.271050407712324
+      },
+      "params": 2,
+      "line": 15,
+      "cyclomaticDensity": 50
+    },
+    {
+      "name": "docsTask",
+      "sloc": {
+        "logical": 12,
+        "physical": 26
+      },
+      "cyclomatic": 1,
+      "halstead": {
+        "operators": {
+          "distinct": 6,
+          "total": 39,
+          "identifiers": [
+            "var",
+            "=",
+            "()",
+            ".",
+            "+",
+            "+="
+          ]
+        },
+        "operands": {
+          "distinct": 26,
+          "total": 50,
+          "identifiers": [
+            "packageJson",
+            "config",
+            "root",
+            "\"package.json\"",
+            "path",
+            "resolve",
+            "require",
+            "appName",
+            "name",
+            "templatePath",
+            "__dirname",
+            "\"../templates/docs.jade\"",
+            "docPath",
+            "\"docs\"",
+            "libPath",
+            "\"lib\"",
+            "cmdPath",
+            "\"../node_modules/.bin\"",
+            "cmd",
+            "\"/doxx\"",
+            "\" -t \"",
+            "\" -T \"",
+            "\" --template \"",
+            "\" -s \"",
+            "execCallback",
+            "exec"
+          ]
+        },
+        "length": 89,
+        "vocabulary": 32,
+        "difficulty": 5.769230769230769,
+        "volume": 445,
+        "effort": 2567.3076923076924,
+        "bugs": 0.14833333333333334,
+        "time": 142.62820512820514
+      },
+      "params": 0,
+      "line": 27,
+      "cyclomaticDensity": 8.333333333333332
+    },
+    {
+      "name": "execCallback",
+      "sloc": {
+        "logical": 4,
+        "physical": 8
+      },
+      "cyclomatic": 2,
+      "halstead": {
+        "operators": {
+          "distinct": 4,
+          "total": 6,
+          "identifiers": [
+            "()",
+            ".",
+            "if",
+            "throw"
+          ]
+        },
+        "operands": {
+          "distinct": 6,
+          "total": 11,
+          "identifiers": [
+            "err",
+            "stdout",
+            "stderr",
+            "console",
+            "log",
+            "error"
+          ]
+        },
+        "length": 17,
+        "vocabulary": 10,
+        "difficulty": 3.6666666666666665,
+        "volume": 56.472777613085164,
+        "effort": 207.06685124797892,
+        "bugs": 0.01882425920436172,
+        "time": 11.50371395822105
+      },
+      "params": 3,
+      "line": 61,
+      "cyclomaticDensity": 50
+    }
+  ],
+  "dependencies": [
+    {
+      "line": 3,
+      "path": "child_process",
+      "type": "CommonJS"
+    },
+    {
+      "line": 4,
+      "path": "path",
+      "type": "CommonJS"
+    },
+    {
+      "line": 29,
+      "path": "* dynamic dependency *",
+      "type": "CommonJS"
+    }
+  ],
+  "maintainability": 69.27293913691456,
+  "params": 1.6666666666666667,
+  "meta": {
+    "analysis": "gulp-escomplex",
+    "analysisVersion": "1.0.0",
+    "fileName": "lib/index.js"
+  }
+}
