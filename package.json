@@ -1,6 +1,6 @@
 {
   "name": "gulp-module-docs",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Docs Gulp Module Integration for Prowl",
   "main": "lib/index.js",
   "scripts": {
